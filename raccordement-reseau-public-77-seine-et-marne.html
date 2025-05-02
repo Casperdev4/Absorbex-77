@@ -85,7 +85,8 @@
                         GRATUIT</a>
                 </li>
                 <li class="nav-item">
-                    <a href="tel:+33173112718" title="reseau assainissement collectif">01 69 52 00 23</a>
+                    <a href="tel:+33173112718" title="reseau assainissement collectif">01 73
+                    11 27 18</a>
                 </li>
             </ul>
         </nav>
@@ -206,39 +207,7 @@
             });
         });
     </script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var observerOptions = {
-                root: null,
-                rootMargin: '0px',
-                threshold: 0.5
-            };
 
-            function observeStep(entry, observer) {
-                entry.target.classList.add('slide-in-done');
-                observer.unobserve(entry.target);
-            }
-
-            function createObserver(element) {
-                var observer = new IntersectionObserver(function (entries) {
-                    entries.forEach(function (entry) {
-                        if (entry.isIntersecting) {
-                            observeStep(entry, observer);
-                        }
-                    });
-                }, observerOptions);
-
-                observer.observe(element);
-            }
-
-            // Observer chaque élément .valeur
-            var elements = document.querySelectorAll('.valeur');
-            elements.forEach(function (element) {
-                createObserver(element);
-            });
-        });
-
-    </script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const options = {
