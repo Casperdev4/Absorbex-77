@@ -63,13 +63,12 @@ try {
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
     $mail->Port       = 465;
 
-    $mail->setFrom('contact@webprime.fr', 'Absorbex 95');
-    $mail->addAddress('contact.assainissement@gmail.com');
+    $mail->setFrom('contact@webprime.fr', 'Absorbex 77');
     $mail->addAddress('info.assainissement@gmail.com');
     $mail->addAddress('webprime91@hotmail.com');
     $mail->CharSet = 'UTF-8';
     $mail->isHTML(true);
-    $mail->Subject = 'Formulaire';
+    $mail->Subject = 'Formulaire 77';
     $mail->Body    = nl2br($message);
     $mail->AltBody = $message;
 
