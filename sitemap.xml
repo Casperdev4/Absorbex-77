@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?> 
+﻿<?xml version="1.0" encoding="UTF-8"?> 
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
 <url>
@@ -157,39 +157,6 @@
   </image:image>
 </url>
 <url>
-  <loc>https://assainissement-77.fr/assainissement-champs-sur-marne.html</loc>
-  <lastmod>2025-11-26</lastmod>
-
-  <image:image>
-    <image:loc>https://assainissement-77.fr/curage-canalisation-77.webp</image:loc>
-    <image:caption>Intervention rapide pour le curage haute pression de canalisations à Champs-sur-Marne.</image:caption>
-    <image:title>Curage canalisation haute pression Champs-sur-Marne</image:title>
-  </image:image>
-
-  <image:image>
-    <image:loc>https://assainissement-77.fr/vidange-fosse-septique-77.webp</image:loc>
-    <image:caption>Vidange de fosses septiques et pompage de bacs à graisse à Champs-sur-Marne.</image:caption>
-    <image:title>Vidange fosse septique et entretien bac à graisse Champs-sur-Marne</image:title>
-  </image:image>
-
-  <image:image>
-    <image:loc>https://assainissement-77.fr/pompe-de-relevage-77.webp</image:loc>
-    <image:caption>Installation, dépannage et entretien de pompes de relevage à Champs-sur-Marne pour eaux usées.</image:caption>
-    <image:title>Pose et maintenance pompe de relevage Champs-sur-Marne</image:title>
-  </image:image>
-
-  <image:image>
-    <image:loc>https://assainissement-77.fr/raccordement-assainissement-77.webp</image:loc>
-    <image:caption>Raccordement au tout-à-l’égout et réseaux d’assainissement collectif à Champs-sur-Marne.</image:caption>
-    <image:title>Raccordement au réseau public d’assainissement Champs-sur-Marne</image:title>
-  </image:image>
-
-  <image:image>
-    <image:loc>https://assainissement-77.fr/vrd-77.webp</image:loc>
-    <image:caption>Travaux de VRD à Champs-sur-Marne : tranchées, raccordements, réseaux et voirie.</image:caption>
-    <image:title>Entreprise de VRD Champs-sur-Marne</image:title>
-  </image:image>
-</url>
 <url>
   <loc>https://assainissement-77.fr/assainissement-chelles.html</loc>
   <lastmod>2025-11-26</lastmod>
