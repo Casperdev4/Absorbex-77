@@ -170,6 +170,39 @@
                 <button type="submit">ENVOYER</button>
             </form>
     </div>
+        <section class="faq-section">
+            <h2>QUESTIONS FREQUENTES - VRD</h2>
+            <div class="faq-item">
+                <div class="faq-question">Que signifie VRD ?</div>
+                <div class="faq-answer">
+                    <p>VRD signifie Voirie et Reseaux Divers. Ce terme designe l'ensemble des travaux necessaires pour viabiliser un terrain : creation d'acces, raccordement aux reseaux (eau, electricite, gaz, assainissement, telecommunications), terrassement et amenagement des abords.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Quels travaux de VRD proposez-vous ?</div>
+                <div class="faq-answer">
+                    <p>Nous realisons tous types de travaux VRD : terrassement, creusement de tranchees, pose de canalisations et gaines, raccordement aux reseaux publics (eau, assainissement, electricite), creation d'allees, pose de bordures, amenagement de surfaces en enrobe ou gravier.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Les travaux de VRD sont-ils obligatoires avant construction ?</div>
+                <div class="faq-answer">
+                    <p>Oui, la viabilisation d'un terrain est obligatoire avant toute construction. Le terrain doit etre raccorde aux reseaux essentiels (eau potable, electricite, assainissement) pour obtenir le permis de construire et respecter les normes en vigueur.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Combien coutent des travaux de VRD ?</div>
+                <div class="faq-answer">
+                    <p>Le cout des travaux VRD depend de nombreux facteurs : superficie du terrain, nature du sol, longueur des tranchees, nombre de raccordements, materiaux choisis et accessibilite du chantier. Contactez-nous pour un devis detaille et personnalise.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Intervenez-vous pour les particuliers et les professionnels ?</div>
+                <div class="faq-answer">
+                    <p>Oui, nous intervenons aussi bien pour les particuliers (construction de maison individuelle, amenagement de terrain) que pour les professionnels et collectivites (lotissements, batiments commerciaux, voiries). Nous adaptons nos prestations a chaque projet.</p>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <div id="contact">
@@ -284,6 +317,16 @@
         }
         return false;
     }
+    </script>
+    <script>
+    document.querySelectorAll('.faq-question').forEach(question => {
+        question.addEventListener('click', () => {
+            const item = question.parentElement;
+            const isActive = item.classList.contains('active');
+            document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+            if (!isActive) item.classList.add('active');
+        });
+    });
     </script>
 </body>
 

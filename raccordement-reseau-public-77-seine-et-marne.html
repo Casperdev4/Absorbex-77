@@ -171,6 +171,39 @@
                 <button type="submit">ENVOYER</button>
             </form>
     </div>
+        <section class="faq-section">
+            <h2>QUESTIONS FREQUENTES - RACCORDEMENT</h2>
+            <div class="faq-item">
+                <div class="faq-question">Le raccordement au tout-a-l'egout est-il obligatoire ?</div>
+                <div class="faq-answer">
+                    <p>Oui, dans les communes disposant d'un reseau d'assainissement collectif, le raccordement est obligatoire dans un delai de 2 ans apres la mise en service du reseau. Cette obligation est prevue par le Code de la sante publique pour des raisons sanitaires et environnementales.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Quelles sont les etapes d'un raccordement au reseau public ?</div>
+                <div class="faq-answer">
+                    <p>Les etapes comprennent : l'etude prealable et les demarches administratives, le terrassement et la creation de la tranchee, la pose des canalisations, l'installation des boites de branchement, le raccordement au collecteur communal, les tests d'etancheite et enfin la remise en etat des surfaces.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Combien coute un raccordement au tout-a-l'egout ?</div>
+                <div class="faq-answer">
+                    <p>Le prix varie selon la distance entre votre habitation et le reseau public, la profondeur de la tranchee, le type de sol et l'accessibilite du terrain. Une traversee de voirie peut egalement impacter le cout. Demandez un devis gratuit pour une estimation precise.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Faut-il des autorisations pour le raccordement ?</div>
+                <div class="faq-answer">
+                    <p>Oui, un raccordement necessite une demande prealable aupres de la mairie et du service d'assainissement de votre commune. Des autorisations speciales sont requises si les travaux traversent la voie publique. Nous pouvons vous accompagner dans ces demarches administratives.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Que devient ma fosse septique apres le raccordement ?</div>
+                <div class="faq-answer">
+                    <p>Apres raccordement au tout-a-l'egout, votre fosse septique doit etre vidangee, nettoyee puis comblee ou demolie selon la reglementation locale. Nous prenons en charge cette mise hors service dans le respect des normes environnementales.</p>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <div id="contact">
@@ -282,6 +315,16 @@
         }
         return false;
     }
+    </script>
+    <script>
+    document.querySelectorAll('.faq-question').forEach(question => {
+        question.addEventListener('click', () => {
+            const item = question.parentElement;
+            const isActive = item.classList.contains('active');
+            document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+            if (!isActive) item.classList.add('active');
+        });
+    });
     </script>
 </body>
 

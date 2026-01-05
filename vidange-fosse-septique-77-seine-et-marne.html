@@ -180,6 +180,39 @@
                 <button type="submit">ENVOYER</button>
             </form>
         </div>
+        <section class="faq-section">
+            <h2>QUESTIONS FREQUENTES - FOSSE SEPTIQUE</h2>
+            <div class="faq-item">
+                <div class="faq-question">A quelle frequence faut-il vidanger une fosse septique ?</div>
+                <div class="faq-answer">
+                    <p>En general, une vidange de fosse septique est recommandee tous les 2 a 4 ans, selon la taille de la cuve et le nombre d'occupants du logement. Si vous constatez des odeurs desagreables ou un ecoulement lent, il est conseille de faire verifier votre installation rapidement.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Quels sont les signes d'une fosse septique pleine ?</div>
+                <div class="faq-answer">
+                    <p>Les signes les plus courants sont : des mauvaises odeurs autour de la fosse ou dans la maison, un ecoulement tres lent des eaux usees, des remontees d'eau dans les sanitaires, ou encore une vegetation anormalement verte au-dessus de la fosse. En cas de doute, contactez-nous pour un diagnostic.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Combien coute une vidange de fosse septique dans le 77 ?</div>
+                <div class="faq-answer">
+                    <p>Le prix d'une vidange depend de plusieurs facteurs : la capacite de la cuve, son accessibilite et la distance a parcourir. Nous proposons des tarifs competitifs et transparents. Contactez-nous au 01 69 52 00 23 pour obtenir un devis gratuit et personnalise.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Proposez-vous l'installation de fosses septiques neuves ?</div>
+                <div class="faq-answer">
+                    <p>Oui, nous realisons l'installation complete de fosses septiques (ou fosses toutes eaux) pour les habitations non raccordees au tout-a-l'egout. Nous prenons en charge l'etude du terrain, le dimensionnement adapte a votre logement, la pose et la mise en service.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Que devient le contenu de la fosse apres la vidange ?</div>
+                <div class="faq-answer">
+                    <p>Les boues et eaux usees extraites de votre fosse septique sont transportees vers des centres agrees de traitement des dechets. Nous respectons scrupuleusement la reglementation environnementale et vous fournissons un bordereau de suivi des dechets apres chaque intervention.</p>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <div id="contact">
@@ -292,6 +325,16 @@
         }
         return false;
     }
+    </script>
+    <script>
+    document.querySelectorAll('.faq-question').forEach(question => {
+        question.addEventListener('click', () => {
+            const item = question.parentElement;
+            const isActive = item.classList.contains('active');
+            document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+            if (!isActive) item.classList.add('active');
+        });
+    });
     </script>
 </body>
 
