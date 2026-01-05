@@ -164,6 +164,39 @@
                 </p>
             </div>
         </section>
+        <section class="faq-section">
+            <h2>QUESTIONS FREQUENTES - DEVIS ET TARIFS</h2>
+            <div class="faq-item">
+                <div class="faq-question">Le devis est-il vraiment gratuit et sans engagement ?</div>
+                <div class="faq-answer">
+                    <p>Oui, tous nos devis sont 100% gratuits et sans aucun engagement. Nous nous deplacons pour evaluer vos besoins et vous fournissons une estimation detaillee et transparente. Vous etes libre d'accepter ou non notre proposition.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Comment sont calcules vos tarifs ?</div>
+                <div class="faq-answer">
+                    <p>Nos tarifs sont etablis en fonction de plusieurs criteres : le type d'intervention (curage, vidange, pompe, VRD, raccordement), la complexite du chantier, l'accessibilite du site et les materiaux necessaires. Chaque devis est personnalise pour correspondre exactement a votre situation.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Proposez-vous des facilites de paiement ?</div>
+                <div class="faq-answer">
+                    <p>Oui, nous proposons differentes modalites de paiement pour nous adapter a votre budget. Pour les chantiers importants (raccordement, VRD, installation de fosse septique), nous pouvons mettre en place un echeancier. Contactez-nous pour en discuter.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Y a-t-il des frais supplementaires apres le devis ?</div>
+                <div class="faq-answer">
+                    <p>Non, nous pratiquons une politique de transparence totale. Le prix indique sur le devis est le prix final, sans surprise ni frais caches. En cas d'imprevus sur le chantier, nous vous consultons systematiquement avant toute intervention supplementaire.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Sous quel delai recevrai-je mon devis ?</div>
+                <div class="faq-answer">
+                    <p>Pour les interventions courantes (vidange, curage), nous pouvons vous fournir un devis telephonique immediat. Pour les chantiers plus complexes necessitant une visite technique (VRD, raccordement), le devis est generalement remis sous 24 a 48h apres notre passage.</p>
+                </div>
+            </div>
+        </section>
         <section>
             <h2 id="nos-valeurs">NOS PARTENAIRES</h2>
             <div class="partenaires-pc">
@@ -303,6 +336,16 @@
         }
         return false;
     }
+    </script>
+    <script>
+    document.querySelectorAll('.faq-question').forEach(question => {
+        question.addEventListener('click', () => {
+            const item = question.parentElement;
+            const isActive = item.classList.contains('active');
+            document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+            if (!isActive) item.classList.add('active');
+        });
+    });
     </script>
 </body>
 
